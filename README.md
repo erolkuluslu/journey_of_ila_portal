@@ -1,7 +1,9 @@
 Crafting Exceptional Mobile UI with Flutter: The Journey of ILA Portal
  ILA Portal mobile app is designed to offer users access to a variety of features, including the ability to apply calls and explore engaging content such as blogs, projects, and news. With a user-friendly interface and powerful functionality, app promises to be a tool for those seeking to stay connected with the latest developments and opportunities within the ILA community.
- 
 
+ ![image](https://github.com/user-attachments/assets/c57e7077-66e7-408b-b2d8-318e927c5198)
+
+ 
 Why Flutter?
 We chose to use Flutter to build the ILA Portal because it enables the creation of customized applications and offers numerous advantages that enhance performance, UI design, development efficiency, and cross-platform compatibility.
 
@@ -257,9 +259,13 @@ class AppColors {
 
 
 How did we monitor and manage tasks?
+![image](https://github.com/user-attachments/assets/b2e59cee-999e-4131-a974-9dfdc7df8dbb)
+
 As the ILA mobile app team, we were aware of the significance of employing a project management tool for effective communication, collaboration, and project oversight. Embracing the Agile methodology, we conducted daily meetings to monitor tasks and devise solutions. Leveraging Jira as our project management tool, we organized tasks into sprints, adhering to the iterative development approach. Each sprint follows a set structure, including planning, development, testing, and review. This facilitated streamlined coordination, enhanced adaptability, and ensured the successful delivery of improvement within fixed timeframes.
 
 How did we design UI of the pages?
+![image](https://github.com/user-attachments/assets/285ebd1a-093a-4df0-abfd-82e4106bec30)
+
 We utilized Figma as our design tool, meticulously crafting prototypes for each page of the application. Figma's comprehensive design capabilities provided us with detailed insights into the visual elements and user flow, enabling us to create pixel-perfect designs that seamlessly integrated with the Flutter codebase.
 When designing the app's pages, we carefully considered the features and design details of the existing website, ensuring a cohesive user experience across both platforms. We also paid close attention to platform-specific features, incorporating Android features for Android devices and iOS features for iOS devices. This meticulous approach ensured a consistent and optimal user experience across different operating systems.
 Beyond visual elements, we focused on creating an intuitive and user-friendly interface. We conducted extensive usability testing to identify potential pain points and refine the design accordingly. This iterative process ensured that the app was not only visually appealing but also easy to navigate and use.
