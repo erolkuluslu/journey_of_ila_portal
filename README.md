@@ -23,6 +23,8 @@ We chose to use Flutter to build the ILA Portal because it enables the creation 
 
 ## How We Designed the ILA Portal UI
 
+While developing the ILA Portal, we paid attention to ensuring a native feel on both iOS and Android devices. We continued the design principles of ILA, already established on the website, to maintain consistency. To achieve this, we carefully built custom widgets, custom themes, and custom text styles throughout the app. This approach ensured a seamless and cohesive user experience that aligns with the ILA brand identity.
+
 - **SVG for High-Quality Visuals:** To ensure high-quality visuals across all devices, we utilized SVG for all in-app images and icons. This decision guaranteed that users consistently enjoy sharp and clear graphics, regardless of their device's resolution.
 
 - **Hero Widget Animations:** We seamlessly integrated Hero widget animation in the app to enhance the user experience and provide a superior feel. The animation not only improved the aesthetic appeal but also made interactions more engaging.
@@ -130,6 +132,87 @@ class _GlobalSaveButtonState extends State<GlobalSaveButton> {
                     ),
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+- **Custom Date Picker Widget:** To ensure a native feel on both iOS and Android devices, we created a custom widget for picking the date of birth. This approach allows the app to offer a seamless and intuitive user experience that aligns with the platform's design principles. This is the one of the many example of our custom widgets.
+
+The simplified code for the custom date picker widget:
+
+```dart
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class DatePickerWidget extends StatefulWidget {
+  const DatePickerWidget({Key? key}) : super(key: key);
+
+  @override
+  _DatePickerWidgetState createState() => _DatePickerWidgetState();
+}
+
+class _DatePickerWidgetState extends State<DatePickerWidget> {
+  DateTime selectedDate = DateTime.now();
+
+  void _selectDate(BuildContext context) async {
+    if (Theme.of(context).platform == TargetPlatform.iOS) {
+      showCupertinoModalPopup(
+        context: context,
+        builder: (_) => Container(
+          height: 250,
+          color: Colors.white,
+          child: Column(
+            children: [
+              SizedBox(
+                height: 200,
+                child: CupertinoDatePicker(
+                  mode: CupertinoDatePickerMode.date,
+                  initialDateTime: selectedDate,
+                  onDateTimeChanged: (val) {
+                    setState(() {
+                      selectedDate = val;
+                    });
+                  },
+                ),
+              ),
+              CupertinoButton(
+                child: Text('Done'),
+                onPressed: () => Navigator.of(context).pop(),
+              )
+            ],
+          ),
+        ),
+      );
+    } else {
+      DateTime? picked = await showDatePicker(
+        context: context,
+        initialDate: selectedDate,
+        firstDate: DateTime(1930),
+        lastDate: DateTime.now(),
+      );
+      if (picked != null && picked != selectedDate)
+        setState(() {
+          selectedDate = picked;
+        });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () => _selectDate(context),
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 25),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.grey),
+          borderRadius: BorderRadius.circular(5),
+        ),
+        child: Text(
+          "${selectedDate.toLocal()}".split(' ')[0],
+          style: TextStyle(fontSize: 16),
         ),
       ),
     );
