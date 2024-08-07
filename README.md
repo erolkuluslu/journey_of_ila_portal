@@ -1,6 +1,3 @@
-Sure, I'll fix the header size issues in your README. I'll use Markdown syntax to properly format the headers.
-
----
 
 # Crafting Exceptional Mobile UI with Flutter: The Journey of ILA Portal
 
