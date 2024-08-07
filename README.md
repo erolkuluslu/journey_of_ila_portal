@@ -9,6 +9,8 @@ The ILA Portal mobile app is designed to offer users access to a variety of feat
 
 We chose to use Flutter to build the ILA Portal because it enables the creation of customized applications and offers numerous advantages that enhance performance, UI design, development efficiency, and cross-platform compatibility.
 
+![image](https://github.com/user-attachments/assets/cda2a80d-2a9a-4c69-8b66-27c28bf8133b)
+
 - **Performance:** Flutter’s engine compiles to native ARM code, ensuring high performance across devices. Leveraging the Skia graphics library, Flutter enables fast rendering and smooth animations, delivering a responsive and seamless user experience.
 
 - **UI and Widget Capabilities:** Flutter offers a rich set of pre-designed widgets that are not only highly customizable but also composable, allowing developers to create complex UIs effortlessly. The pixel-perfect widgets ensure a consistent look and feel across both iOS and Android platforms, making your app visually appealing and professional.
@@ -261,18 +263,21 @@ EB),
 
 ## How did we monitor and manage tasks?
 
+As the ILA mobile app team, we were aware of the significance of employing a project management tool for effective communication, collaboration, and project oversight. Embracing the Agile methodology, we conducted daily meetings to monitor tasks and devise solutions. Leveraging Jira as our project management tool, we organized tasks into sprints, adhering to the iterative development approach. Each sprint follows a set structure, including planning, development, testing, and review. This facilitated streamlined coordination, enhanced adaptability, and ensured the successful delivery of improvements within fixed timeframes.
+
 ![image](https://github.com/user-attachments/assets/b2e59cee-999e-4131-a974-9dfdc7df8dbb)
 
-As the ILA mobile app team, we were aware of the significance of employing a project management tool for effective communication, collaboration, and project oversight. Embracing the Agile methodology, we conducted daily meetings to monitor tasks and devise solutions. Leveraging Jira as our project management tool, we organized tasks into sprints, adhering to the iterative development approach. Each sprint follows a set structure, including planning, development, testing, and review. This facilitated streamlined coordination, enhanced adaptability, and ensured the successful delivery of improvements within fixed timeframes.
 
 ## How did we design the UI of the pages?
 
-![image](https://github.com/user-attachments/assets/2a490a41-efdf-45a1-9b61-66d0f6af692c)
-
 We utilized Figma as our design tool, meticulously crafting prototypes for each page of the application. Figma's comprehensive design capabilities provided us with detailed insights into the visual elements and user flow, enabling us to create pixel-perfect designs that seamlessly integrated with the Flutter codebase.
+
+![image](https://github.com/user-attachments/assets/2a490a41-efdf-45a1-9b61-66d0f6af692c)
 
 When designing the app's pages, we carefully considered the features and design details of the existing website, ensuring a cohesive user experience across both platforms. We also paid close attention to platform-specific features, incorporating Android features for Android devices and iOS features for iOS devices. This meticulous approach ensured a consistent and optimal user experience across different operating systems.
 
 Beyond visual elements, we focused on creating an intuitive and user-friendly interface. We conducted extensive usability testing to identify potential pain points and refine the design accordingly. This iterative process ensured that the app was not only visually appealing but also easy to navigate and use.
 
-By utilizing Figma's powerful design tools and adhering to platform-specific guidelines, we were able to create a mobile app that not only mirrored the website's design logic but also provided a unique user experience across both Android and iOS devices.
+By utilizing Figma's powerful design tools and adhering to platform-specific guidelines, we were able to create a mobile app that not only mirrored the website's design logic but also provided a unique user experience across both Android and iOS devices.🚀
+
+#ILATech #Flutter #CrossPlatform #MobileAppDevelopment #InnovationInTech
